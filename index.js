@@ -101,6 +101,7 @@ return {
     return newarr;
   },
   
+<<<<<<< HEAD
   flatten: function(array,bolean = false){
       if (bolean === false){
         return array.flat(Infinity)
@@ -110,6 +111,16 @@ return {
     },
 
 
+=======
+   flatten: function (array, state) {
+      let newArr = [...array];
+      if (state) { return newArr.flat(1) }
+      else { return newArr.flat(Infinity) }
+    },
+
+
+
+>>>>>>> b75d84ae62370e47f26c3559838d32b08da2ee2b
     uniq: function(array, isSorted = false, callback) {
       if (callback === undefined) {
         callback = x => x;
